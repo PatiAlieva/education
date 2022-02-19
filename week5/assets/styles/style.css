@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+header {
+    height: 480px;
+    width: 1440px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav ul li:not(:last-child) {
+    margin-right: 24px;
+}
+nav a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #232323;
+}
+nav .menu:hover {
+    text-decoration: underline;
+}
+.main-banner {
+    background: url("/week5/assets/image/banner.png") center no-repeat;
+    height: 480px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-banner h1 {
+    font-size: 48px;
+    font-weight: bold;
+    max-width: 920px;
+    text-align: center;
+}
+h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+}
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 156%;
+}
+.block2 {
+    display: flex;
+    align-items: center;
+    width: 920px;
+    height: 322px;
+    left: 260px;
+    top: 570px;
+    margin-left: 200px;
+    justify-content: space-between;
+}
+.block2 h2 {
+    width: 102px;
+    height: 28px;
+    left: 0px;
+    top: 0px;
+
+    display: flex;
+    align-items: center;
+    color: #5C6E62;
+}
+.block2 p {
+    width: 440px;
+    height: 250px;
+    left: 0px;
+    top: 58px;
+    text-align: justify;
+
+    display: flex;
+    color: #232323;
+}
+.block3 {
+    background: url(/week5/assets/image/rectangle6.png) center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 330px;
+    left: 0px;
+    top: 1032px;
+}
+.block3 h2 {
+    width: 920px;
+    height: 28px;
+    left: 669px;
+    top: 54px;
+
+    text-align: center;
+    color: #E7A646;
+}
+.block3 p {
+    width: 920px;
+    height: 80px;
+    left: 260px;
+    top: 106px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.block4 {
+    display: flex;
+    align-items: center;
+    width: 920px;
+    height: 845px;
+    left: 260px;
+    top: 1452px;
+    margin-left: 200px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.block4 h2 {
+    width: 102px;
+    height: 28px;
+    left: 0px;
+    top: 0px;
+
+    display: flex;
+    align-items: center;
+
+    color: #5C6E62;
+}
+img.pic1 {
+    width: 420px;
+    height: 264px;
+    left: 0px;
+    top: 58px;
+    
+    background: linear-gradient(0deg, rgba(220, 219, 205, 0.2), rgba(220, 219, 205, 0.2)), url(image.png);
+
+    float: right; /* Обтекание картинки по левому краю */
+}
+#text1 {
+    width: 440px;
+    height: 250px;
+    left: 480px;
+    top: 58px;
+    text-align: justify;
+
+    color: #232323;
+}
+#text2 {
+    width: 920px;
+    height: 350px;
+    left: 0px;
+    top: 364px;
+
+    color: #232323;
+}
+#highlight1, #highlight2, #highlight3 {
+    color:#E7A646;
+    ;
+}
+#text3 {
+    width: 450px;
+    height: 75px;
+    left: 466px;
+    top: 770px;
+    text-align: right;
+
+    color: #838383;
+}
+footer {
+    width: 1440px;
+    height: 380px;
+    left: 0px;
+    top: 2437px;
+    background-color: #4D4C4A;
+}
+footer .container {
+    width: 240px;
+    height: 248px;
+    left: 600px;
+    top: 66px;
+    align-items: center;
+    padding: center;
+}
+footer .container p {
+    width: 240px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+
+    display: flex;
+    text-align: center;
+    color: #FFFFFF;
+}
+input, label{
+    display:block;
+    color: #FFFFFF;
+}
+input {
+    width: 240px;
+    height: 40px;
+    left: 0px;
+    background-color: #4D4C4A;
+}
+button {
+    width: 240px;
+    height: 40px;
+    left: 0px;
+    top: 208px;
+    background: #E7A646; /* цвет фона */
+    color: black; /* цвет текста */
+    border: none; /* Убираем рамку */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    margin-bottom: 1rem; /* Отступ снизу */ 
+}
