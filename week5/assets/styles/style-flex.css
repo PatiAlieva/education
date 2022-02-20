@@ -19,7 +19,7 @@ body {
     justify-content: center;
 }
 h3 {
-        text-align: center;
+    text-align: center;
 }
 .nav {
     width: 40vh;
@@ -30,30 +30,30 @@ h3 {
     flex-direction: column;
     background-color: rgb(238, 230, 188);
 }
-        .flexcontainer {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            flex: 1;
-            align-content: flex-end;
-        }
-        .flexm {
-            flex-grow: 1;
-            background-color: rgb(241, 227, 144);
-            height: 80px;
-            width: 250px;
-            padding: 20px 80px;
-            margin: 10px;
-        }
-        .footer {
-            background-color: rgb(177, 176, 176);
-            flex-direction: row;
-            display: flex;
-            justify-content: space-around;
-        }
-        .section {
-            background-color: white;
-            height: 20px;
-            padding: 20px 40px;
-            margin: 10px;
-        }
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    align-content: flex-end;
+}
+.flexm {
+    flex-grow: 1;
+    background-color: rgb(241, 227, 144);
+    height: 80px;
+    width: 250px;
+    padding: 20px 80px;
+    margin: 10px;
+}
+.footer {
+    background-color: rgb(177, 176, 176);
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+.section {
+    background-color: white;
+    height: 20px;
+    padding: 20px 40px;
+    margin: 10px;
+}
