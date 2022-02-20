@@ -20,8 +20,8 @@ ul {
     margin: 0 auto;
 }
 header {
-    height: 480px;
-    width: 1440px;
+    height: 80px;
+    width: 100%;
     position: absolute;
     left: 0;
     top: 0;
@@ -81,9 +81,10 @@ p {
     flex-direction: column;
     width: 920px;
     height: 322px;
-    left: 260px;
-    top: 570px;
+    margin: auto;
     margin-left: 200px;
+    margin-top: 90px;
+    margin-bottom: 140px;
     padding: 40px;
 }
 .Section1 {
@@ -95,9 +96,6 @@ p {
 .block1 h2 {
     width: 102px;
     height: 28px;
-    left: 0px;
-    top: 0px;
-
     display: flex;
     align-items: center;
     color: #5C6E62;
@@ -108,8 +106,6 @@ p {
     color: #232323;
     width: 440px;
     height: 250px;
-    left: 0px;
-    top: 58px;
 }
 .block2 {
     background: url(/week5/assets/image/rectangle6.png) center no-repeat;
@@ -117,18 +113,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1440px;
     height: 330px;
-    left: 0px;
-    top: 1032px;
 }
 .block2 h2 {
     text-align: center;
     color: #E7A646;
     width: 920px;
     height: 28px;
-    left: 669px;
-    top: 54px;
 }
 .block2 p {
     display: flex;
@@ -137,17 +128,16 @@ p {
     color: #FFFFFF;
     width: 920px;
     height: 80px;
-    left: 260px;
-    top: 106px;
 }
 .block3 {
     display: flex;
     flex-direction: column;
     width: 920px;
     height: 845px;
-    left: 260px;
-    top: 1452px;
+    margin: auto;
     margin-left: 200px;
+    margin-top: 64px;
+    margin-bottom: 166px;
 }
 .Section3 {
     display: flex;
@@ -160,37 +150,26 @@ p {
     align-items: center;
     width: 102px;
     height: 28px;
-    left: 0px;
-    top: 0px;
     color: #5C6E62;
 }
 .img3 {
     width: 420px;
     height: 264px;
-    left: 0px;
-    top: 58px;
 }
 img.pic1 {
     width: 420px;
     height: 264px;
-    left: 0px;
-    top: 58px;
-    
     background: linear-gradient(0deg, rgba(220, 219, 205, 0.2), rgba(220, 219, 205, 0.2)), url(image.png);
 }
 #text1 {
     width: 440px;
     height: 250px;
-    left: 480px;
-    top: 58px;
     text-align: justify;
     color: #232323;
 }
 #text2 {
     width: 920px;
     height: 350px;
-    left: 0px;
-    top: 364px;
     color: #232323;
 }
 #highlight1, #highlight2, #highlight3 {
@@ -200,8 +179,6 @@ img.pic1 {
 #text3 {
     width: 450px;
     height: 75px;
-    left: 466px;
-    top: 770px;
     text-align: right;
     color: #838383;
 }
@@ -210,10 +187,7 @@ footer {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    width: 1440px;
     height: 380px;
-    left: 0px;
-    top: 2437px;
     background-color: #4D4C4A;
 }
 footer .footcontainer {
@@ -223,16 +197,12 @@ footer .footcontainer {
     align-items: center;
     width: 240px;
     height: 248px;
-    left: 600px;
-    top: 66px;
     align-items: center;
     padding: center;
 }
 footer .footcontainer p {
     width: 240px;
     height: 32px;
-    left: 0px;
-    top: 0px;
     display: flex;
     text-align: center;
     color: #FFFFFF;
@@ -247,14 +217,11 @@ input, label{
 input {
     width: 240px;
     height: 40px;
-    left: 0px;
     background-color: #4D4C4A;
 }
 button {
     width: 240px;
     height: 40px;
-    left: 0px;
-    top: 208px;
     background: #E7A646; /* цвет фона */
     color: black; /* цвет текста */
     border: none; /* Убираем рамку */
