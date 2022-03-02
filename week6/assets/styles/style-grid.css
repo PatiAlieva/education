@@ -1,0 +1,52 @@
+.body {
+    width: 100%;
+    min-height: 100vh;
+}
+.header {
+    background: rgb(158, 157, 157);
+    grid-column: 1/4;
+    text-align: center;
+}
+.main {
+    background: rgb(248, 211, 217);
+    display: grid;
+    grid-template-columns: 1 fr repeat(auto-fit
+    , minmax(10%, 1fr));/*Почему-то пространство не съедается*/
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    gap: 1rem;
+    /*align-content:center;
+    justify-content: center; не работают*/
+    text-align: center;
+} 
+.sidebar {
+    background: rgb(122, 192, 172);
+    text-align: center;
+} 
+.footer {
+    background: rgb(158, 157, 157);
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr;
+    gap: 1rem;
+    align-content: center;
+    /*justify-content: space-evenly; не работает*/
+    text-align: center;
+}
+.maindiv {
+    background: rgb(245, 217, 166);
+}
+.maindiv1 {
+    grid-column: 1/3;
+    text-align: center;
+}
+.section {
+    background: rgb(248, 238, 238);
+}
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 10% 1fr 10%;
+    height: 100vh;
+}
