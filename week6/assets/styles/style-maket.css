@@ -1,0 +1,131 @@
+.container {
+    display: grid;
+    width: 100%;
+    height: 160vh;
+    grid-template-columns: 2fr 1fr 0.5fr 0.5fr;
+    grid-auto-rows: 5% 5% 1fr 1fr 1fr 20%;
+    gap: 20px;
+    align-items: stretch;
+    justify-items: stretch;
+}
+.header {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    grid-template-rows: 0.5fr;
+    gap: 1rem;
+    align-content: center;
+    justify-self: space-evenly;
+    text-align: center
+}
+.partition {
+    background: #d1d4d6;
+}
+.nav {
+    justify-self: center;
+    align-self: center;
+}
+.header, .nav, .footer {
+    grid-column: 1/5;
+}
+.header a {
+    font-size: 20px;
+    font-weight: 600;
+    color:#01305E;
+}
+a {
+    text-decoration: none;
+}
+.cell1 {
+    grid-row: 3/8;
+    justify-content: center;
+    align-self: center;
+}
+h1 {
+    font-size: 60px;
+    font-weight: 600;
+}
+.cell1 a {
+    font-size: 16px;
+    font-weight: 500;
+    color:#1C242C;
+}
+.cell1 .sec:hover {
+    text-decoration: underline;
+}
+.cell2 {
+    grid-row: 3/8;
+    background: url(/week6/assets/image/maket1.png) no-repeat;
+    /*<img src="assets/image/maket1.png" alt="img1" class="maket1">*/
+    background-size: 100%;
+}
+.cell3 {
+    grid-row: 3/5;
+    background: url(/week6/assets/image/maket2.png) no-repeat;
+    /*<img src="assets/image/maket2.png" alt="img2" class="maket2">*/
+    background-size: 100%;
+}
+.cell4 {
+    background: url(/week6/assets/image/maket3.png) no-repeat; 
+    /*<img src="assets/image/maket3.png" alt="img3" class="maket3">*/
+    background-size: 100%;
+}
+.cell5 {
+    background: url(/week6/assets/image/maket4.png) no-repeat; 
+    /*<img src="assets/image/maket4.png" alt="img4" class="maket4">*/
+    background-size: 100%;
+}
+.cell6 {
+    grid-column: 3/5;
+    grid-row: 5/8;
+    background: url(/week6/assets/image/maket5.png) no-repeat; 
+    /*<img src="assets/image/maket5.png" alt="img5" class="maket5">*/
+    background-size: 100%;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav ul li:not(:last-child) {
+    margin-right: 24px;
+    padding: 0;
+}
+nav a {
+    font-size: 16px;
+    font-weight: 500;
+    color:#1C242C;
+}
+nav .menu:hover {
+    text-decoration: underline;
+}
+#highlight1, #highlight2 {
+    color:#B8884B;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr;
+    gap: 1rem;
+    align-content: center;
+    justify-self: space-evenly;
+    text-align: center;
+}
+footer ul {
+    list-style: none;
+}
+footer a {
+    font-size: 14px;
+    font-weight: 600;
+    color:#1C242C;
+}
+footer .sec:hover {
+    text-decoration: underline;
+}
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color:#1C242C;
+}
+.button2 {
+    background: #252D35;
+}

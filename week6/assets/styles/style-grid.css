@@ -31,7 +31,7 @@
     grid-template-rows: 0.5fr;
     gap: 1rem;
     align-content: center;
-    /*justify-content: space-evenly; не работает*/
+    justify-self: space-evenly;
     text-align: center;
 }
 .maindiv {
