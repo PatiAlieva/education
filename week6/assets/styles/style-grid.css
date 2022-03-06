@@ -1,24 +1,48 @@
-.body {
+/*.body {
     width: 100%;
     min-height: 100vh;
+}*/
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 10% 1fr 10%;
+    height: 100vh;
 }
 .header {
+    display: flex;
     background: rgb(158, 157, 157);
     grid-column: 1/4;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+h4 {
+    text-align: center;
 }
 .main {
-    background: rgb(248, 211, 217);
-    display: grid;
-    grid-template-columns: 1 fr repeat(auto-fit
-    , minmax(10%, 1fr));/*Почему-то пространство не съедается*/
-    /*grid-template-columns: 1fr 1fr;*/
-    grid-template-rows: 1fr 0.5fr 0.5fr;
-    gap: 1rem;
-    /*align-content:center;
-    justify-content: center; не работают*/
-    text-align: center;
-} 
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: rgb(245, 241, 224);
+}
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    align-content: flex-end;
+}
+.maindiv {
+    display: flex;
+    flex-grow: 1;
+    background-color: rgb(241, 227, 144);
+    height: 80px;
+    width: 250px;
+    padding: 20px 80px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
 .sidebar {
     background: rgb(122, 192, 172);
     text-align: center;
@@ -27,26 +51,13 @@
     background: rgb(158, 157, 157);
     grid-column: 1/4;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2% 1fr 1fr 1fr 1fr 2%;
     grid-template-rows: 0.5fr;
     gap: 1rem;
     align-content: center;
     justify-self: space-evenly;
     text-align: center;
 }
-.maindiv {
-    background: rgb(245, 217, 166);
-}
-.maindiv1 {
-    grid-column: 1/3;
-    text-align: center;
-}
 .section {
     background: rgb(248, 238, 238);
-}
-.container {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 10% 1fr 10%;
-    height: 100vh;
 }
