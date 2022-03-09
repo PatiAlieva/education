@@ -93,7 +93,6 @@ p {
     left: 0px;
     top: 58px;
     text-align: justify;
-
     display: flex;
     color: #232323;
 }
@@ -113,7 +112,6 @@ p {
     height: 28px;
     left: 669px;
     top: 54px;
-
     text-align: center;
     color: #E7A646;
 }
@@ -122,11 +120,9 @@ p {
     height: 80px;
     left: 260px;
     top: 106px;
-
     display: flex;
     align-items: center;
     text-align: center;
-
     color: #FFFFFF;
 }
 .block4 {
@@ -145,10 +141,8 @@ p {
     height: 28px;
     left: 0px;
     top: 0px;
-
     display: flex;
     align-items: center;
-
     color: #5C6E62;
 }
 img.pic1 {
@@ -156,9 +150,7 @@ img.pic1 {
     height: 264px;
     left: 0px;
     top: 58px;
-    
     background: linear-gradient(0deg, rgba(220, 219, 205, 0.2), rgba(220, 219, 205, 0.2)), url(image.png);
-
     float: right; /* Обтекание картинки по левому краю */
 }
 #text1 {
@@ -175,7 +167,6 @@ img.pic1 {
     height: 350px;
     left: 0px;
     top: 364px;
-
     color: #232323;
 }
 #highlight1, #highlight2, #highlight3 {
@@ -188,7 +179,6 @@ img.pic1 {
     left: 466px;
     top: 770px;
     text-align: right;
-
     color: #838383;
 }
 footer {
@@ -211,7 +201,6 @@ footer .container p {
     height: 32px;
     left: 0px;
     top: 0px;
-
     display: flex;
     text-align: center;
     color: #FFFFFF;
