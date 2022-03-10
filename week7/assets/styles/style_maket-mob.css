@@ -239,12 +239,42 @@ footer .sec:hover {
     h1 {
         text-align: center;
     }
-    img {max-width: 100%;}
+    img {
+        max-width: 100%;
+    }
+    .cell2, .cell3, .cell4, .cell5, .cell6 {
+        display: flex;
+        justify-content: center;
+    }
     .footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 @media screen and (max-width: 599px) {
-
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .header-logo {
+        display: none;
+    }
+    .icon {
+        display: none;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cell2, .cell3, .cell4, .cell5, .cell6 {
+        display: flex;
+        justify-content: center;
+    }
+    .footertop {
+        display: none;
+    }
 }
