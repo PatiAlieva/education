@@ -270,7 +270,7 @@ footer .sec:hover {
         flex-direction: column;
         align-items: center;
     }
-    .cell2, .cell3, .cell4, .cell5, .cell6 {
+        .cell2, .cell3, .cell4, .cell5, .cell6 {
         display: flex;
         justify-content: center;
     }
