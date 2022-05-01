@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <style>
+        #click {
+            height: 50px;
+            width: 150px;
+            background-color: rgb(198, 198, 219);
+        }
+        #click:hover {
+            background-color: rgb(230, 178, 178);
+        }
+    </style>
+</head>
+<body>
+    <button id="click" onclick="getName()">Кликни меня!</button>
+    
+    <script>
+        function getName() {
+            let names = prompt("Как тебя зовут?", "Anonymous");
+
+            alert(`Привет, ${names} !`);
+        }
+    </script>
+</body>
+</html>
