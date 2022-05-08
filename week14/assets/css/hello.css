@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    color: green;
+    font-size: 30px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+button {
+    height: 100px;
+    width: 200px;
+    background-color: rgb(198, 198, 219);
+    font-size: 20px;
+}
+button:hover {
+    background-color: rgb(230, 178, 178);
+}

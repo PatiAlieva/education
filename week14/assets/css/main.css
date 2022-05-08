@@ -1,0 +1,32 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 50px;
+  color: red;
+}
+
+button {
+  height: 50px;
+  width: 50px;
+  background: #afadad;
+  font-size: 25px;
+}
+
+button:hover {
+  background: #7777e2;
+}
+
+button:focus {
+  background: #3f3ff0;
+}
+
+input {
+  height: 50px;
+  width: 350px;
+  font-size: 30px;
+}
+/*# sourceMappingURL=main.css.map */
