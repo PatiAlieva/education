@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/action-page.css">
+
+</head>
+<body>
+    <div class="website">
+        <h1>Очень интересный сайт</h1>
+        <button type="button" class="inlet">Вход</button>
+        <button class="record" onclick="document.getElementById('mod_form').style.display='block'">Регистрация</button>
+        <p id="welcom"></p>
+    </div>
+
+    <div id="mod_form" class="modal">
+        <span onclick="document.getElementById('mod_form').style.display='none'" class="close" title="Закрыть modal">&times;</span>
+        <form id="form" class="mod_content" action="#">
+            <div class="container">
+                <h1>Регистрация</h1>
+
+                <label for="email">Email</label>
+                <input type="text" placeholder="Введите Email" id="email" required>
+                <div id="error"></div>
+
+                <label for="pswrd">Пароль</label>
+                <input type="password" placeholder="Введите пароль" id="pswrd" required>
+                <div id="pswrd_length"></div>
+
+                <label for="pswrd-repeat">Повторите пароль</label>
+                <input type="password" placeholder="Повторите пароль" id="pswrd-repeat" oninput="srav()" required>
+                <div id="pswrd_error"></div>
+
+                <label for="first_name">Имя</label>
+                <input type="text" placeholder="Введите имя" name="first_name" required>
+
+                <label for="last_name">Фамилия</label>
+                <input type="text" placeholder="Введите фамилию" name="last_name" required>
+
+                <label for="sex">Пол</label><br>
+                <p><input name="gender" type="radio" value="male">Мужской</p>
+                <p><input name="gender" type="radio" value="female">Женский</p>
+                <div id="gender_false"></div>
+
+                <label for="pswrd-repeat">Номер телефона</label>
+                <input type="text" placeholder="Введите номер телефона" id="tel_number" class="input-0" required maxlength="12" minlength="12" @keypress="onlyNumbers">
+                <div id="number"></div>
+
+                <label for="">
+                    <input type="checkbox" checked="checked" name="remember">Запомнить меня
+                </label>
+
+                <p>Создавая учётную запись, вы соглашаетесь с нашей <a href="#">Политикой конфиденциальности</a>.</p>
+
+                <div class="group_btn">
+                    <button type="button" onclick="document.getElementById('mod_form').style.display='none'" class="cancel_btn">Отменить</button>
+                    <button type="submit" class="signup_btn">Вход</button>
+                </div>
+                <p>Если вы уже зарегистрированы - нажмите <a href="#">сюда</a></p>
+            </div>
+        </form>
+    </div>
+
+    
+    <script src="./assets/js/action-page.js"></script>
+
+</body>
+</html>

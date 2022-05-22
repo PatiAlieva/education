@@ -1,0 +1,100 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+.website {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Поля ввода */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    background: #f1f1f1;
+    border: none;
+}
+/* Цвет при фокусе */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+/* стиль для кнопок */
+button {
+    background-color: #5fb862;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+    font-weight: bold;
+}
+.modal > button {
+    width: 100%;
+}
+button:hover {
+    opacity: 1;
+}
+.cancel_btn, .record {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+.cancel_btn, .signup_btn {
+    float: inherit;
+    width: 49%;
+}
+/* все отступы в контейнере */
+.container {
+    padding: 16px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;/*вывести на передний план*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+.mod_content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close {
+    position: absolute;
+    right: 35px;
+    top: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+.close:hover, .close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+.group_btn::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#error, #pswrd_length, #pswrd_error {
+    color: red;
+}
