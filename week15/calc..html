@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="/assets/images/education_calculator_maths_math_icon_149699.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/calc.css">
+</head>
+<body>
+    <div>
+        <h3>Calculator</h3>
+        <p>Число 1: <input type="text" id="number1"></p>
+        <p>Число 2: <input type="text" id="number2"></p>
+        <div id="operators">
+            <button id="plus" onClick="getSum()">+</button>
+            <button id="minus" onClick="getMinus()">-</button>
+            <button id="multiply" onClick="getMultiply()">*</button>
+            <button id="divide" onClick="getDivide()">/</button>
+            <button id="degree" onClick="getDegree()">^</button>
+            <button id="remainder" onClick="getRemainder()">%</button>
+        </div>
+        <p id="out">Результат: </p>
+    </div>
+    
+    <script src="/assets/js/calc.js"></script>
+</body>
+</html>

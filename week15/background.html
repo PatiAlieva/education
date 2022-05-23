@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="/assets/images/cat_icon_138789.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/background.css">
+</head>
+<body>
+    <div id="desktopColor">
+        <p>Выберите тему: </p>
+        <select name="profile_color" id="selectColor" onchange="this.parentNode.style.backgroundColor = this.value">
+            <option name="button" style="background-color: red;" value="red">Красный</option>
+            <option name="button" style="background-color: green;" value="green">Зелёный</option>
+            <option name="button" tyle="background-color: blue;" value="blue">Синий</option>
+            <option name="button" style="background-color: orange;" value="orange">Оранжевый</option>
+            <option name="button" style="background-color: yellow;" value="yellow">Жёлтый</option>
+            <option name="button" style="background-color: black;" value="black">Чёрный</option>
+            <option name="button" style="background-color: white;" value="white">Белый</option>
+        </select>
+        <div class="header"><h1>Мой веб-сайт о котиках</h1></div>
+        <div class="cats">
+            <div class="card my_card" onclick="select(this)">
+                <img src="https://i.pinimg.com/474x/8b/41/7d/8b417d7275b568e71f8ea62f0b597475.jpg" alt="">
+                <div class="card_body">
+                    <h4 class="card-title">Факты о кошках</h4>
+                    <p class="card-text">Кошек можно различить, как людей по отпечаткам пальцев, только у кошачьих это отпечаток носа</p>
+                    <a href="https://www.adme.ru/zhizn-zhivotnye/18-faktov-o-koshkah-posle-kotoryh-vy-polyubite-ih-esche-bolshe-1897865/" class="btn btn-primary">Перейти на котостраницу</a>
+                </div>
+            </div>
+    
+            <div class="card my_card" onclick="select(this)">
+                <img src="http://img2.joyreactor.cc/pics/post/%D0%BA%D0%BE%D1%82-%D0%B6%D0%B8%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D1%8C-%D0%A4%D0%BE%D1%82%D0%BE%D0%B6%D0%BE%D0%BF-%D1%83%D0%B1%D0%B8%D1%82-1506132.jpeg" alt="">
+                <div class="card_body">
+                    <h4 class="card-title">Факты о кошках</h4>
+                    <p class="card-text">Математик Ричард Монтгомери однажды разработал специальную теорию под названием «теорема падающей кошки». Согласно ей, кошка, падающая спиной вниз, всегда переворачивается спиной вверх, чтобы приземлиться на лапы. 
+                    </p>
+                    <a href="https://zagge.ru/40-interesnyx-faktov-o-koshkax/" class="btn btn-primary">Перейти на котостраницу</a>
+                </div>
+            </div>
+    
+            <div class="card my_card" onclick="select(this)">
+                <img src="https://icdn.lenta.ru/images/2020/09/30/13/20200930130228617/pwa_vertical_1280_8d172d6dae702e03017c045d5142ee5e.jpg" alt="">
+                <div class="card_body">
+                    <h4 class="card-title">Факты о кошках</h4>
+                    <p class="card-text">Сог­ласно и­удей­ской ле­ген­де, Ной мо­лил­ся Бо­гу, про­ся за­щитить пи­щу на ков­че­ге от крыс. В от­вет на это Бог заста­вил ль­ва чих­нуть, и из не­го выс­ко­чил кот</p>
+                    <a href="https://www.playbuzz.com/vidzah10/8-4-2017-8-50-39-am" class="btn btn-primary">Перейти на котостраницу</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        function select(sender) {
+            sender.classList.add("selected");
+        }
+        function change_color(that) {
+            let colors = document.getElementById('desktopColor').value;
+            that.parentNode.style.backgroundColor = colors
+        }
+    </script>
+</body>
+</html>

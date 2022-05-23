@@ -5,7 +5,6 @@ showSlides(slideIndex);
 //функция увеличивает индекс на 1, переходит на следующий слайд
 function getNextSlide() {
     showSlides(slideIndex += 1);
-    debugger;
 }
 
 //функция уменьшает индекс на 1, переходит на предыдущий слайд

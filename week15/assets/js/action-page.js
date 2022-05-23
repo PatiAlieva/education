@@ -37,20 +37,23 @@ let modal = document.getElementById('mod_form');
         let input = document.querySelector('.input-0');
         input.value = input.value.replace(/[^\+\d]/g,'');
     };
-    
+    function getWelcome() {
+        document.getElementById("welcome").innerHTML = `Добро пожаловать, ${first_name} !`;
+    } //не работает
+
 
                 // onlyNumbers(event) {
         //     let keyCode=event.keyCode ? event.keyCode : event.which;
         //     if (event.keyCode < 48 || event.keyCode > 57) {
         //         event.preventDefault();
         //     }
-        // } код должен запретить ввод букв в инпут, но не работает (разобраться почему)
+        // } //код должен запретить ввод букв в инпут, но не работает (разобраться почему)
         // let input = document.getElementById('tel_number');
         // input.addEventListener('keydown', function(event)) {
         //     if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105)) {
         //         event.preventDefault();
         //     }
-        // } код должен запретить ввод букв в инпут, но не работает (разобраться почему)
+        // } //код должен запретить ввод букв в инпут, но не работает (разобраться почему)
 
         // tel_number.onblur = function() {
         //     document.getElementById('number').innerHTML="";
@@ -58,4 +61,4 @@ let modal = document.getElementById('mod_form');
         //     if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105)) {
         //         event.preventDefault();
         //     }
-        //} аналогично предыдущим 
+        //} //аналогично предыдущим 

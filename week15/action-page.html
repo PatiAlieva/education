@@ -35,7 +35,7 @@
                 <div id="pswrd_error"></div>
 
                 <label for="first_name">Имя</label>
-                <input type="text" placeholder="Введите имя" name="first_name" required>
+                <input type="text" placeholder="Введите имя" id="first_name" required>
 
                 <label for="last_name">Фамилия</label>
                 <input type="text" placeholder="Введите фамилию" name="last_name" required>
@@ -57,7 +57,7 @@
 
                 <div class="group_btn">
                     <button type="button" onclick="document.getElementById('mod_form').style.display='none'" class="cancel_btn">Отменить</button>
-                    <button type="submit" class="signup_btn">Вход</button>
+                    <button type="submit" onclick="getWelcome()" class="signup_btn">Вход</button>
                 </div>
                 <p>Если вы уже зарегистрированы - нажмите <a href="#">сюда</a></p>
             </div>
