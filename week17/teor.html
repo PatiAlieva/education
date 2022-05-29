@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let str = "Книга, Альбом, Тетрадь";
+        alert(str.slice(7,13));//Альбом
+
+        let str1 = "Книга, Альбом, Тетрадь";
+        alert(str1.slice(-15,-9));//Альбом
+
+        let str2 = "Книга, Альбом, Тетрадь";
+        alert(str2.substring(7,13));//Альбом
+
+        let str3 = "Книга, Альбом, Тетрадь";
+        alert(str3.substring(13,7));//Альбом
+
+        let str4 = "Книга, Альбом, Тетрадь";
+        alert(str4.substring(-15,-9));//не работает
+
+        let str5 = "Книга, Альбом, Тетрадь";
+        alert(str5.substr(7,6));//Альбом
+
+        let str6 = "Книга,\nАльбом,\nТетрадь";
+        alert(str6);
+
+        function getUpper(str7) {
+            if (!str7) return str7;
+            return str7[0].toUpperCase() + str7.slice(1);
+        }
+        alert(getUpper("настя"));//Настя
+
+        let date = new Date(2021, 0, 24, 22, 51);
+        alert(date);// Sun Jan 24 2021 22:51:00 GMT+0200 (Восточная Европа, стандартное время)
+
+        function getSecTomorrow() {
+            let now = new Date();//сегодня
+            let tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1);//завтра
+            let difference = tomorrow - now;//в миллисекундах
+            return Math.round(difference/1000);//в секундах
+        }
+        alert(getSecTomorrow());//
+
+        // let txt = "Иванова Мария Владимировна";
+        // let array = txt.split(",")
+        // alert(array);
+
+        function getMoney(price) {
+            let result = "";
+            for (let i=0; i < price.length; ++i) {
+                if(price[i]!=+price[i]) continue;
+
+                result +=price[i];
+            }
+            return result;
+        }
+        alert(getMoney("99€"));
+
+        // function getPrice(price) {
+        //     return +price.slice(1);
+        // }
+        // alert(getPrice(99€));//не работает
+
+        function getRandom(min,max) {
+            min = Math.ceil(1);
+            max = Math.floor(100);
+            return Math.floor(Math.random()*(max-min+1))+min;
+        }
+        alert(getRandom());
+    </script>
+</body>
+</html>

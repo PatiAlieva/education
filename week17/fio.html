@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fullName {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        button {
+            background-color: rgb(171, 194, 236);
+        }
+        .container {
+            display: flex;
+            justify-content: center; 
+            gap: 10px;           
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fullName">
+        <input type="text" id="decoder">
+        <button id="outButton">Отправить</button>
+    </div>
+    <div class="container">
+        <label for="surname">Фамилия: </label>
+        <input type="text" id="surname">
+        <label for="firstname">Имя: </label>
+        <input type="text" id="firstname">
+        <label for="patronymic">Отчество: </label>
+        <input type="text" id="patronymic">
+    </div>
+
+
+    <script src="./assets/js/fio.js"></script>
+</body>
+</html>

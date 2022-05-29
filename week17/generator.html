@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        button {
+            background-color: azure;
+            height: 50px;
+            width: 100px;
+        }
+        button:hover {
+            background-color: beige;
+            font-weight: bold;
+        }
+        .numbers {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Генератор случайных чисел</h1>
+    <button id="sendNumbers">Нажми меня</button>
+    <div class="numbers">
+        <p>Сгенерировали: </p>
+        <p id="item1"></p>
+        <p id="item2"></p>
+        <p id="item3"></p>
+        <p id="item4"></p>
+        <p id="item5"></p>
+        <p id="item6"></p>
+        <p id="item7"></p>
+        <p id="item8"></p>
+        <p id="item9"></p>
+        <p id="item10"></p>
+    </div>
+    <div>
+        <p>Минимальное: </p><p id="min"></p>
+        <p>Максимальное: </p><p id="max"></p>
+        <p>Среднее арифметическое: </p><p id="mean"></p>
+        <p>Сумма чисел: </p><p id="sum"></p>
+        <p>Произведение чисел: </p><p id="mult"></p>
+    </div>
+
+    <script>
+        const button = document.querySelector('#sendNumbers');
+        button.addEventListener('click', sendRandom);
+
+        //функция выводит рандомно целое число от -10 до 10
+        function getRandom(min,max) {
+            min = Math.ceil(-10);
+            max = Math.floor(10);
+            return Math.floor(Math.random()*(max-min+1))+min;
+        }
+        // alert(getRandom());
+        //функция выводит 10 рандомных чисел на экран при нажатии на кнопку
+        function sendRandom() {
+            document.querySelector('#item1').innerHTML = getRandom()
+            document.querySelector('#item2').innerHTML = getRandom()
+            document.querySelector('#item3').innerHTML = getRandom()
+            document.querySelector('#item4').innerHTML = getRandom()
+            document.querySelector('#item5').innerHTML = getRandom()
+            document.querySelector('#item6').innerHTML = getRandom()
+            document.querySelector('#item7').innerHTML = getRandom()
+            document.querySelector('#item8').innerHTML = getRandom()
+            document.querySelector('#item9').innerHTML = getRandom()
+            document.querySelector('#item10').innerHTML = getRandom()
+        }
+
+        // function minRandom() {
+        //     let arr = [];
+        //     document.querySelector('.numbers').value = "";
+        //     let min = -10;
+        //     let max = 10;
+            
+        //     return Math.round(min + Math.random() * (max - min + 1));
+
+        //     document.querySelector('.numbers').value = arr.join(",");
+        //     document.querySelector('#sendNumbers')
+
+        // }
+
+    </script>
+</body>
+</html>

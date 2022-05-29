@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .spam {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <div class="spam">
+        <input type="text" id="newMessage" placeholder="Введите сообщение">
+        <button id="sendButton" onclick="addMessage()">Отправить</button>
+    </div>
+    <script>
+        let messages = [];
+
+        // function finMessage() {
+        //     sender.parentElement.classList.toggle
+        // }
+        function addMessage() {
+            let sms = document.querySelector('#newMessage').value;
+            messages.push(sms);
+
+        }
+        
+        function checkSpam(str) {
+            let spamStr = str.toLowerCase();
+            return spamStr.includes('viagra') || spamStr.includes('XXX')
+        }
+        // alert( checkSpam('buy ViAgRA now') );
+    </script>
+</body>
+</html>
