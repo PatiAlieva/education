@@ -6,34 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .spam {
+        .messenger {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 600px;
+        }
+        .spam, .container {
             text-align: center;
         }
+
     </style>
 </head>
 <body>
-    <div class="container"></div>
-    <div class="spam">
-        <input type="text" id="newMessage" placeholder="Введите сообщение">
-        <button id="sendButton" onclick="addMessage()">Отправить</button>
+    <div class="messenger">
+        <div class="container"></div>
+        <div class="spam">
+            <input type="text" id="newMessage" placeholder="Введите сообщение">
+            <button id="sendButton" onclick="addMessage()">Отправить</button>
+        </div>
     </div>
+
     <script>
         let messages = [];
 
-        // function finMessage() {
-        //     sender.parentElement.classList.toggle
-        // }
         function addMessage() {
             let sms = document.querySelector('#newMessage').value;
+            // let spamStr = sms.toLowerCase();
+            // return spamStr.includes('viagra') || spamStr.includes('XXX') //не работает
             messages.push(sms);
+            chatMessages();
+        }
 
+        function chatMessages() {
+            let optionsString = "";
+            for(let m of messages) {
+                optionsString += `<div><span>${m}<span></div>`;
+            }
+            document.querySelector(".container").innerHTML = optionsString;
         }
-        
-        function checkSpam(str) {
-            let spamStr = str.toLowerCase();
-            return spamStr.includes('viagra') || spamStr.includes('XXX')
-        }
-        // alert( checkSpam('buy ViAgRA now') );
+
+        document.addEventListener("DOMContentLoaded", function() {
+            chatMessages();
+        });
+
     </script>
 </body>
 </html>
