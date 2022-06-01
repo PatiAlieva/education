@@ -1,3 +1,5 @@
+const button = document.querySelector('#getGenerate');
+button.addEventListener('click', vyv);
 function vyv(){
     let arr = [] ;
     document.getElementById("IshMas").value = "";
@@ -18,6 +20,7 @@ function vyv(){
     document.getElementById("multElem").onclick = multElements.bind(null, arr);
 
 }
+
 
 function minElement(arr){
     if(document.getElementById("minElem").checked) {

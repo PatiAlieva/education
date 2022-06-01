@@ -13,7 +13,7 @@
             justify-content: space-between;
             height: 600px;
         }
-        .spam, .container {
+        .spam {
             text-align: center;
         }
 
@@ -32,8 +32,8 @@
         let messages = [];
 
         function addMessage() {
-            let sms = document.querySelector('#newMessage').value;
-            // let spamStr = sms.toLowerCase();
+            let sms = document.querySelector('#newMessage').value,
+            spamStr = sms.toLowerCase();
             // return spamStr.includes('viagra') || spamStr.includes('XXX') //не работает
             messages.push(sms);
             chatMessages();
@@ -42,6 +42,7 @@
         function chatMessages() {
             let optionsString = "";
             for(let m of messages) {
+                m = m.replace(/viagra/i,'***').replace(/xxx/i, '***');
                 optionsString += `<div><span>${m}<span></div>`;
             }
             document.querySelector(".container").innerHTML = optionsString;
