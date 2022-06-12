@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <metacharset="utf-8">
+        <title>JavaScript Form Validation using a sampleregistration form</title>
+        <meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+        <meta name="description" content="This document is an example of JavaScript Form Validation using a sampleregistration form. " />
+        <link rel='stylesheet' href='./assets/css/reg.css' type='text/css' />
+
+    </head>
+    <body>
+        <h1>Регистрационная форма</h1>
+        <div class="container">
+            <form name='registration' onSubmit="return formValidation1();">
+                <ul>
+                    <li><label for="username">Имя:</label></li>
+                    <li><input type="text" id="username" size="50" /></li>
+                    <div id="errorName"></div>
+
+                    <li><label for="email">Email:</label></li>
+                    <li><input type="text" id="email" size="50" /></li>
+                    <div id="errorEmail"></div>
+
+                    <li><label for="passid">Пароль:</label></li>
+                    <li><input type="password" id="passid" size="50" /></li>
+                    <div id="errorPassword"></div>
+
+                    <li><label for="country">Cтрана:</label></li>
+                    <li><select id="country">
+                        <option selected="" value="Default">(Пожалуйста, выберите страну)</option>
+                        <option value="AF">Австралия</option>
+                        <option value="AL">Канада</option>
+                        <option value="UK">Великобритания</option>
+                        <option value="AS">Россия</option>
+                        <option value="AD">США</option>
+                        </select></li><br>
+                        <div id="errorCountry"></div>
+                            
+                    <li><label id="gender">Пол:</label></li>
+                    <li><input type="radio" name="msex" id="msex" value="Male" /><span>Мужской</span></li>
+                    <li><input type="radio" name="fsex" id="fsex" value="Female" /><span>Женский</span></li>
+                    <div id="errorSex"></div>
+
+                    <li><label>Язык:</label></li>
+                    <li><input type="checkbox" name="en" value="en" checked /><span>Английский</span></li>
+                    <li><input type="checkbox" name="rus" value="rus" /><span>Русский</span></li>
+
+                    <li><label for="desc">О себе:</label></li>
+                    <li><textarea name="desc" id="desc" ></textarea></li>
+                    <!-- <div id="submitForm"></div> -->
+                    <li><input type="submit" name="submit" id="button" value="Отправить" /></li>
+                </ul>
+            </form>
+        </div>
+
+
+        <script src="./assets/js/reg.js"></script>
+    </body>
+</html>

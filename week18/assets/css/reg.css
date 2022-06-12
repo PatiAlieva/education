@@ -1,0 +1,35 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgb(235, 233, 233);
+}
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+.container {
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+form li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+textarea, #button {
+    width: 100%;
+}
+#button {
+    height: 30px;
+    background: rgb(134, 155, 134);
+    color: white;
+    border: none;
+}
+#button:hover {
+    font-weight: bolder;
+}
+#errorEmail, #errorName, #errorPassword, #errorCountry, #errorSex {
+    color: red;
+}
+#submitForm {
+    color: green;
+}
