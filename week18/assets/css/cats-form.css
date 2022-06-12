@@ -1,0 +1,54 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+h1 {
+    text-align: center;
+}
+button {
+    height: 5vh;
+    width: 100%;
+    background-color: rgba(54, 54, 247, 0.7);
+}
+button:hover {
+    background-color: rgba(0, 0, 255, 0.7);
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 100px;
+}
+.owner_name, .pet {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.pet {
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-top: 10px;
+}
+select {
+    width: 53%;
+    height: 5vh;
+}
+.food, .gender, .comment, .picture {
+    padding-bottom: 10px;
+}
+textarea {
+    width: 98%;
+}
+input:required:valid {
+    border-color: green;
+}
+input:invalid {
+    border-color: red; 
+}
+.pic {
+    padding-top: 60px;
+}
+img {
+    width: 400px;
+}

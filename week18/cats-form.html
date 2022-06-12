@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Котоанкета</title>
+        <link rel="shortcut icon" href="https://cdnicons.flaticon.com/png/512/4016/premium/4016912.png?token=exp=1642969164~hmac=
+        2211fa297f1580e44937ed54c6b87cd1" type="image/svg">
+        <link rel="stylesheet" href="assets/css/cats-form.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <div id="result" class="pic">
+                <img src="" id="catImage">
+            </div>
+            <div class="form">
+                <form action="#">
+                    <section>
+                        <h1>Котоанкета</h1>
+                    </section>
+                    <div class="pet">
+                        <label for="name1">Кличка питомца*</label>
+                        <input type="text" id="name1" name="moniker" placeholder="Кличка питомца" required/>
+                    </div>
+                    <fieldset class="owner">
+                        <legend>Данные владельца</legend>
+                        <div class="owner_name">
+                            <label for="name">Имя*</label>
+                            <input type="text" id="name" name="firstname" placeholder="Имя" pattern="^([А-Я]{1}[а-яё]{1,23})$" required>
+                        </div>
+                        <div class="owner_name">
+                            <label for="fio">Фамилия*</label>
+                            <input type="text" id="fio" name="surname" placeholder="Фамилия" pattern="^([А-Я]{1}[а-яё]{1,23})$" required>
+                        </div>
+                        <div class="owner_name">
+                            <label for="phone">Номер телефона*</label>
+                            <input type="tel" id="phone" name="phonenumber" placeholder="Телефон" pattern="/^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/" minlength="10" maxlength="20" required/>
+                        </div>
+                        <div class="owner_name">
+                            <label for="email">E-Mail</label>
+                            <input type="email" id="email" name="email" placeholder="E-Mail"/>
+                        </div>
+                    </fieldset>
+                    <div class="pet">
+                        <span>Выберите породу</span>
+                        <select name="breed" id="breed" onchange="show()">
+                            <option value="abyssinian">Абиссинская</option>
+                            <option value="british ">Британская</option>
+                            <option value="noble">Дворянская</option>
+                            <option value="persian">Персидская</option>
+                            <option value="russianBlue">Русская голубая</option>
+                            <option value="siamese">Сиамская</option>
+                        </select>
+                    </div>
+                    <div class="food">
+                        <span>Питание:</span><br/>
+                        <input type="checkbox" name="feed1" value="dryfood">Сухой корм<br/>
+                        <input type="checkbox" name="feed2" value="wetfood">Влажный корм<br/>
+                        <input type="checkbox" name="feed3" value="naturalfood">Натуральный корм<br/>
+                    </div>
+                    <div class="gender">
+                        <span>Пол питомца</span><br/>
+                        <span>Самец </span><input type="radio" name="sex"/><br/>
+                        <span>Самка </span><input type="radio" name="sex"/><br/>
+                    </div>
+                    <div class="comment">
+                        <span>Комментарий владельца</span><br/>
+                        <textarea rows="5" cols="20" name="comment"></textarea>
+                    </div>
+                    <div class="picture">
+                        <form enctype="multipart/form-data" method="post">
+                            <label for="photo">Фото питомца</label>
+                            <input type="file" id="photo" name="petphoto" accept="image/*"/><br/>
+                        </form>
+                    </div>
+                    <div class="btn">
+                        <button type="button">Сохранить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            function show() {
+                if(document.querySelector('#breed').value =="abyssinian")
+                    document.querySelector('#catImage').src = "https://api.tpstatic.ru/upload/resize_cache/iblock/231/3079_2309_2/shutterstock_67133332.jpg";
+
+                if(document.querySelector('#breed').value =="british")
+                    document.querySelector('#catImage').src = "https://www.purina.ru/sites/default/files/2020-09/britanskaya-koshka_1.jpg";
+
+                if(document.querySelector('#breed').value =="noble")
+                    document.querySelector('#catImage').src = "https://funart.pro/uploads/posts/2021-07/1626870204_45-funart-pro-p-egeiskaya-koshka-zhivotnie-krasivo-foto-56.jpg";
+
+                if(document.querySelector('#breed').value =="persian")
+                    document.querySelector('#catImage').src = "https://kot-pes.com/wp-content/uploads/2015/06/Persidskaya_koshka_10.jpg";
+
+                if(document.querySelector('#breed').value =="russianBlue")
+                    document.querySelector('#catImage').src = "https://www.purinaone.ru/cat/sites/default/files/2021-01/%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B3%D0%BE%D0%BB%D1%83%D0%B1%D0%B0%D1%8F_%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_0.jpg";
+
+                if(document.querySelector('#breed').value =="siamese")
+                    document.querySelector('#catImage').src = "https://natworld.info/wp-content/uploads/2014/11/%D0%BA%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%B0%D1%8F-%D1%81%D0%B8%D0%B0%D0%BC%D1%81%D0%BA%D0%B0%D1%8F-%D0%BA%D0%BE%D1%88%D0%BA%D0%B0.jpg";
+            }
+        </script>
+    </body>
+</html>
