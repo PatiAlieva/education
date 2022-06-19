@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class Worker {
+            constructor(name, surname, rate, days) {
+                this.name = name;
+                this.surname = surname;
+                this.rate = rate;
+                this.days = days;
+            }
+            getSalary() {
+                return this.rate * this.days;//произведение ставки на количество дней
+            }//метод выводит з/п работника
+        }
+        worker = new Worker("Вася", "Пупкин", 1500, 7);
+        console.log(worker.name);//Вася
+        console.log(worker.surname);//Пупкин
+        console.log(worker.rate);//1500
+        console.log(worker.days);//7
+        console.log(worker.getSalary());//10500
+        alert(worker.name);
+        alert(worker.surname);
+        alert(worker.getSalary());
+    </script>
+</body>
+</html>
