@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Validator {
+            constructor() {
+            }
+            isEmail(str) {
+                return ((str.indexOf('@') !== -1) && (str.indexOf('.') !== -1))
+            }
+            isDomain(str) {
+                return ((str.indexOf('.com') !== -1) || (str.indexOf('.ru') !== -1))
+            }
+            isDate(str) {
+                let date = str.match(/[0-9]{2}\.[0-9]{2}\.[0-9]{4}/);
+                return date === null ? false : true;
+            }
+            isPhone(str) {
+                let phone = str.match(/^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/);
+                return phone === null ? false : true;
+            }
+        }
+        let validator = new Validator();
+
+        console.log(validator.isEmail('alisa@mail.ru'));
+        console.log(validator.isDomain('itgirlschool.ru'));
+        console.log(validator.isDate('12.05.2021'));
+        console.log(validator.isPhone('+7(910)123-45-67'));
+    </script>
+</body>
+</html>
