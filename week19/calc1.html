@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function Calculator() {
+            this.number = function() {
+                this.number1 = +prompt('Введите первый номер', 0);
+                this.number2 = +prompt('Введите второй номер', 0);
+            };
+            this.sum = function() {
+                return this.number1 + this.number2;
+            };
+            this.minus = function() {
+                return this.number1 - this.number2;
+            };
+            this.multiply = function() {
+                return this.number1 * this.number2;
+            };
+            this.divide = function() {9
+                return this.number1 / this.number2;
+            };
+        }55
+        let calculator = new Calculator();
+        calculator.number();
+
+        alert("Сумма = " + calculator.sum());
+        alert("Разность = " + calculator.minus());
+        alert("Произведение = " + calculator.multiply());
+        alert("Частное = " + calculator.divide());
+    </script>
+</body>5
+</html>
