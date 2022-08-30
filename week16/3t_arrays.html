@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+        }
+        #firstEl, #filter {
+            height: 50px;
+            margin-top: 30px;
+        }
+        h4 {
+            color: red;
+        }
+        h4:hover {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h4>Вывести на экран первый элемент:</h4>
+    <div id="firstEl"></div>
+    <h4>Отфильтровать от нежелательных значений:</h4>
+    <div id="filter"></div>
+    <h4>Найти индекс массива, длина которого > 3:</h4>
+    <div id="index"></div>
+
+    <script>
+        let arr = ['js', 'css', 'html'];
+        //вывести на экран первый элемент
+        document.querySelector('#firstEl').innerHTML = arr[0];
+
+        let arr2 = [0, 1, false, 2, undefined, '', 3, null];
+        //отфильтровать от нежелательных значений
+        let filteredArr2 = arr2.filter(function(el)
+        {
+            return el;
+        });
+        document.querySelector('#filter').innerHTML = filteredArr2;
+
+        //найти индекс массива, длина которого > 3
+        let arrays = [
+            [1, 2],
+            [1, 2, 3],
+            [1, 2, 3, 4],
+        ];
+        for (let i = 0; i < arrays.length; i++) {
+
+            if(arrays[i].length > 3) {
+                document.querySelector('#index').innerHTML = i;
+                //console.log(i);
+            }    
+        }
+
+    </script>
+</body>
+</html>

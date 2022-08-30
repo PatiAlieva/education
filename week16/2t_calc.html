@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: medium;
+    }
+    .calculate {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 50px;
+    }
+    .price {
+        font-weight: bold;
+        color: red;
+    }
+    img {
+        height: 300px;
+        width: 400px;
+    }
+</style>
+<body>
+    <div class="calculate">
+        <div>
+            <h2>Калькулятор стоимости авто</h2>
+            <img src="./assets/images/6aR0.gif" alt="car">
+        </div>
+        <div class="container">
+            <div class="auto-brands">
+                <span>Марка: </span>
+                <select id="brands" onchange="calc()" class="select">
+                    <option value="0" id="none">Не выбрана</option>
+                    <option value="600000" id="hyundai">Hyundai</option>
+                    <option value="550000" id="kia">KIA</option>
+                    <option value="1000000" id="mercedes">Mercedes</option>
+                    <option value="700000" id="renault">Renault</option>
+                    <option value="800000" id="toyota">Toyota</option>
+                </select>
+            </div>
+            <div class="auto-models">
+                <span>Модель: </span>
+                <select name="autoModels" id="models" class="select">
+                    <option value="none"></option>
+                </select>
+            </div>
+            <div class="year">
+                <span>Год выпуска: </span>
+                <select name="year" id="years" onchange="calc()" class="year">
+                    <option value="0"></option>
+                    <option value="10000">1995</option>
+                    <option value="15000">2000</option>
+                    <option value="20000">2005</option>
+                    <option value="25000">2010</option>
+                    <option value="30000">2015</option>
+                    <option value="50000">2020</option>
+                    <option value="70000">2022</option>
+                </select>
+            </div>
+            <span>Топливо: </span>
+            <div class="auto_fuel">
+                <input type="checkbox" onchange="calc()" id="petrol" name="fuel" value="10000">
+                <label for="petrol" class="title-checkbox">Бензин</label><br>
+    
+                <input type="checkbox" onchange="calc()" id="gas" name="fuel" value="15000">
+                <label for="gas" class="title-checkbox">Газ</label><br>
+    
+                <input type="checkbox" onchange="calc()" id="diesel" name="fuel" value="12000">
+                <label for="diesel" class="title-checkbox">Дизельное топливо</label>
+            </div>
+            <div class="transmission">
+                <span>Коробка передач: </span>
+                <p><input name="transm" type="radio" onchange="calc()" value = 10000 id ="mech">Механическая</p>
+                <p><input name="transm" type="radio" onchange="calc()" value = 15000 id="automate">Автоматическая</p>
+            </div>
+            <p class="price">Цена: </p>
+            <div id="total"></div>
+        </div>
+    </div>
+    
+    <script src="./assets/js/calc.js"></script>
+
+</body>
+</html>
