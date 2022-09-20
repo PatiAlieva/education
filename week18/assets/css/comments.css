@@ -1,0 +1,21 @@
+.inputs {
+    width: 250px;
+}
+.error {
+    color: red;
+    font-size: smaller;
+}
+.author {
+    color: green;
+    font-weight: bold;
+    padding-right: 10px;
+}
+#chat {
+    margin-bottom: 10px;
+}
+img {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin-right: 5px;
+}
